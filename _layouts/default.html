@@ -4,16 +4,31 @@
   {% include head.html %}
 
   <body>
-<div id="wrapper" class="hfeed">
+
+    <div class="page index_page" id="wrap">
+
     {% include header.html %}
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+
+    {{ content }}
 
     {% include footer.html %}
-</div>
+
+  </div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+      $(function () {
+          $(window).on('scroll', function () {
+              if ($(window).scrollTop() > 100) {
+                  $('.header').removeClass('large').addClass('small');
+              } else {
+                  $('.header').removeClass('small').addClass('large');
+              }
+          });
+      });
+  </script>
+
 <script type="text/javascript">
    $(function(){
      var pageMenu = '{{page.menuItem}}';
@@ -33,6 +48,8 @@
    ga('send', 'pageview');
 
 </script>
+
+
   </body>
 
 </html>
