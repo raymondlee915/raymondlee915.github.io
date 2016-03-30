@@ -8,7 +8,7 @@ ul, li, dl, dt, dd { list-style:none;margin:0;padding:0;}
 /*head*/
 #wrap { overflow:hidden;}
 .navbar { position:fixed; width:100%; z-index:99999999;background:#fff;}
-.index_page .carousel, .details_page .nav_mbx { margin-top:103px;}
+.index_page .carousel, .details_page .nav_mbx { margin-top:105px;}
 .navbar-default { background:#fff; border:none;}
 .navbar { margin-bottom:0;}
 .small.navbar{
