@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Blue Power | SharePoint Email Field
-excerpt: SharePoint Email Columncan help you to create email field(column) in SharePoint easily.
+title: BluePower | SharePoint Email Field
+excerpt: SharePoint Email Column can help you to create email field(column) in SharePoint easily.
 menuItem: emailField
 pageType: details_page
 ---
@@ -64,19 +64,17 @@ pageType: details_page
 
       <div class="textD_box">
           <div class="container">
-              <div class="textD_main">
+              <div class="textD_main" id="creation">
                   <h3>Creation </h3>
                   <div class="row">
-                      <div class="col-xs-12 col-md-8 col-lg-8">
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                        <div class="right_img text-center">
+                            <img src="assets/images/emailcolumn/createfield.png" class="img-responsive bp-maximage" />
+                        </div>
+                    </div>
+                      <div class="col-xs-12 col-md-6 col-lg-6">
                           <div class="left_info">
-                            Without SharePoint Email Column, administrators have to create a “Single line of text” field for the email information; however, with this new field type, they can easily create an email column by selecting the “Email” on page “Create Column”.
-
-Comparing to the “Single line of text” column, “Email” column provides users the features of Domain Information Auto-completion and Email Address Validation.
-                          </div>
-                      </div>
-                      <div class="col-xs-12 col-md-4 col-lg-4">
-                          <div class="right_img text-center">
-                              <img src="assets/images/emailcolumn/createfield.png" class="img-responsive" />
+                            After you intalled SharePoint Email Column, you can get a new option in the field list. If you want to create a new field to hold email adresses in your list, all you need to do is choose this new type.
                           </div>
                       </div>
                   </div>
@@ -84,21 +82,25 @@ Comparing to the “Single line of text” column, “Email” column provides u
           </div>
       </div>
 
-      <div class="textD_box">
+      <div class="textD_box" id="settings">
           <div class="container">
               <div class="textD_main">
                   <h3>Settings </h3>
                   <div class="row">
-                      <div class="col-xs-12 col-md-8 col-lg-8">
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                        <div class="right_img text-center">
+                            <img src="assets/images/emailcolumn/settings.png" class="img-responsive bp-maximage" />
+                        </div>
+                    </div>
+                      <div class="col-xs-12 col-md-6 col-lg-6">
                           <div class="left_info">
-                            SharePoint Email Column provides administrators an option to set a default email domains’ list. They can easily set a list of domain choices for their users to choose from and thus save the users’ time.
-
-The plugin also allows administrators to restrict the users from entering other domain information that is not included in the list they created to ensure they only get the exact email information that is really needed.
-                          </div>
-                      </div>
-                      <div class="col-xs-12 col-md-4 col-lg-4">
-                          <div class="right_img text-center">
-                              <img src="assets/images/emailcolumn/settings.png" class="img-responsive" />
+                            On the Setting page, there are certain things you can do:
+                            <ol>
+                              <li>Put the most desired email domains into a list. When end users trying to type in they will get a list of options with these domain names.</li>
+                              <li>You can remove one item from this list by double-cliking on the item.</li>
+                              <li>By checking "Only the emails with above addresses are allowed" can help you restrict the field value to the domain list.</li>
+                              <li>You can convert exsiting Single Line Text column into a Email column.</li>
+                            </ol>
                           </div>
                       </div>
                   </div>
@@ -107,17 +109,18 @@ The plugin also allows administrators to restrict the users from entering other 
       </div>
       <div class="textD_box">
           <div class="container">
-              <div class="textD_main">
+              <div class="textD_main" id="auto-completion">
                   <h3>Domain Information Auto-completion</h3>
                   <div class="row">
-                      <div class="col-xs-12 col-md-8 col-lg-8">
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                        <div class="right_img text-center">
+                            <img src="assets/images/emailcolumn/typing.png" class="img-responsive bp-maximage" />
+                        </div>
+                    </div>
+                      <div class="col-xs-12 col-md-6 col-lg-6">
                           <div class="left_info">
-                            When you keep typing in, this email field will show a list of domain choices for you. You can choose the one you want by moving the focus with the "Up" and "Down" button on your keyboard.
-                          </div>
-                      </div>
-                      <div class="col-xs-12 col-md-4 col-lg-4">
-                          <div class="right_img text-center">
-                              <img src="assets/images/emailcolumn/typing.png" class="img-responsive" />
+                            When end users keep typing in, email field will show a list of emails with pre-defined domain names for you.
+                            You can choose the one you want by moving the focus with the "Up" and "Down" button on your keyboard.
                           </div>
                       </div>
                   </div>
@@ -127,17 +130,17 @@ The plugin also allows administrators to restrict the users from entering other 
 
       <div class="textD_box">
           <div class="container">
-              <div class="textD_main">
+              <div class="textD_main" id="validation">
                   <h3>Email Address Validation</h3>
                   <div class="row">
-                      <div class="col-xs-12 col-md-8 col-lg-8">
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                        <div class="right_img text-center">
+                            <img src="assets/images/emailcolumn/validation.png" class="img-responsive bp-maximage" />
+                        </div>
+                    </div>
+                      <div class="col-xs-12 col-md-6 col-lg-6">
                           <div class="left_info">
-                          This plugin supports the feature of Email Address Validation which guarantees only the email address in the right format can be saved.
-                          </div>
-                      </div>
-                      <div class="col-xs-12 col-md-4 col-lg-4">
-                          <div class="right_img text-center">
-                              <img src="assets/images/emailcolumn/validation.png" class="img-responsive" />
+                          By default, email column will validate the user's input. This validation guarantees only the email address in the right format can be saved.
                           </div>
                       </div>
                   </div>
@@ -145,20 +148,11 @@ The plugin also allows administrators to restrict the users from entering other 
           </div>
       </div>
 
-      <div class="tipsD">
-          <div class="container">
-              <div class="tips_main">
-              <h1>License</h1>  
-    This product is delivered with Farm License, which means you can use you copy with one farm whithout any limitations. After you pay for our product, we are going to ask the ID of your SharePoint Farm to generate a license for you.
-              </div>
-          </div>
-
-      </div>
-
-      <div class="textD_box">
+      <div class="textD_box" id="purchase">
           <div class="container">
               <div class="textD_main">
                   <h3>Purchase </h3>
+                  SharePoint Email Column is available as a free, fully featured 30-day trial (1xFarm License with an unlimited number of end users).
                   <div class="table-responsive">
                       <table class="table table-bordered tableD">
                           <tr class="active text-center">
@@ -168,10 +162,10 @@ The plugin also allows administrators to restrict the users from entering other 
                               <td>Operation</td>
                           </tr>
                           <tr class="text-center">
-                              <td>Email Column for SharePoint 2010, 2013</td>
-                              <td>Farm, unlimited number of users</td>
-                              <td class="red_text">$49</td>
-                              <td>
+                              <td style="vertical-align:middle">Email Column for SharePoint 2010, 2013</td>
+                              <td style="vertical-align:middle">Farm, unlimited number of users</td>
+                              <td class="red_text" style="vertical-align:middle">$49</td>
+                              <td style="vertical-align:middle">
                                   <button class="btn btn_buynow">buy now</button><br />
                                   <img src="assets/images/pic_d04.jpg" />
                               </td>

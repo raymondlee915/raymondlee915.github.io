@@ -1,3 +1,7 @@
+body {
+  font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 ul, li, dl, dt, dd { list-style:none;margin:0;padding:0;}
     .page a, .page img {
     transition: all 1s;
@@ -194,7 +198,7 @@ box-shadow: 0px 0px 100px #888888;
 .footer_one { background:#4f5458;padding:40px 0;}
 .footer_message { font-size:14px;color:#ccc; margin-top:15px;}
 .footer_message p{ margin-bottom:0;}
-.footer_message p:last-child{ padding-left:30px;}
+
 .footer_one_02 dl dt{ font-size:16px; color:#fdfdfd; margin-bottom:5px;}
 .footer_one_02 dl dd a { font-size:12px; color:#ccc; background:url( ../assets/images/icon_footer_dd.png) no-repeat left center; padding-left:15px; display:block;
                          height:25px; line-height:25px;
@@ -274,3 +278,11 @@ padding:5px 25px;
 .tableD td.red_text { font-size:16px; color:#ff0202;}
 .tableD td { font-size:16px; color:#333;  }
 .tableD .active td { font-size:16px; color:#333; font-weight:600;}
+
+.bp-maximage{
+  width: 100%;
+}
+
+ol>li{
+  list-style-type: inherit;
+}
