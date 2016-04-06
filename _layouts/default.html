@@ -18,27 +18,33 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script type="text/javascript">
+
+function resetTopBar() {
+  if ($(window).scrollTop() > 100 ) {
+    if($('.header').is(".large")){
+      $('.header').removeClass('large').addClass('small');
+      console.log('change to small');
+    }
+  } else if( $('.header').is(".small")){
+      $('.header').removeClass('small').addClass('large');
+      console.log('change to large');
+  }
+}
       $(function () {
-          $(window).on('scroll', function () {
-              if ($(window).scrollTop() > 100 ) {
-                if($('.header').is(".large")){
-                  $('.header').removeClass('large').addClass('small');
-                  console.log('change to small');
-                }
-              } else if( $('.header').is(".small")){
-                  $('.header').removeClass('small').addClass('large');
-                  console.log('change to large');
-              }
-          });
+          $(window).on('scroll', resetTopBar);
       });
   </script>
 
 <script type="text/javascript">
    $(function(){
+     resetTopBar();
+     
      var pageMenu = '{{page.menuItem}}';
      if(pageMenu){
-        $("#mainnav li[menuItem='"+pageMenu+"']").addClass("current-menu-item current_page_item");
+        $(".navbar li[menuItem='"+pageMenu+"']").addClass("active");
      }
+
+
    });
 
    (function (i, s, o, g, r, a, m) {
