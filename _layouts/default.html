@@ -38,7 +38,7 @@ function resetTopBar() {
 <script type="text/javascript">
    $(function(){
      resetTopBar();
-     
+     $("#onePageBody").css("minHeight", $(document).height()-357);
      var pageMenu = '{{page.menuItem}}';
      if(pageMenu){
         $(".navbar li[menuItem='"+pageMenu+"']").addClass("active");
