@@ -7,254 +7,221 @@ pageType: index_page
 ---
 
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
-        </ol>
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+    </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="assets/images/banner01.jpg" />
-                <div class="carousel-caption">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            {% include email-column-banner.html %}
+        </div>
+        <div class="item">
+            {% include list-view-filter-banner.html %}
+        </div>
+    </div>
 
-                    <div class="row">
-                        <div class="col-lg-8 col-md-8 col-xs-12 col-sm-12">
-                            <div class="banner01_left">
-                                <div class="img_tips" style="margin-left: -15px;">
-                                    <img src="assets/images/banner_tips.png" class="img-responsive" />
-                                </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+
+<div id="Div1" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#Div1" data-slide-to="0" class="active"></li>
+        <li data-target="#Div1" data-slide-to="1"></li>
+        <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <!-- <img src="assets/images/slide2-bg.jpg" /> -->
+        </div>
+        <div class="item">
+            <!-- <img src="assets/images/slide4-bg.jpg" /> -->
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#Div1" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#Div1" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+
+
+
+<div class="product_box">
+    <div class="container">
+        <div class="product_main">
+            <h3>PRODUCTS</h3>
+            <div class="media row">
+                <div class="media-left col-sm-12 col-xs-12  col-md-3 col-lg-3 ">
+                    <a href="sharepoint-email-field.html">
+                        <img src="assets/images/pro_pic01.png" class="media-object" src="..." alt="..." />
+                    </a>
+                </div>
+                <div class="media-body  col-sm-12 col-xs-12 col-md-8 col-lg-8 ">
+                    <h4 class="media-heading"> <a href="sharepoint-email-field.html"> SharePoint Email Column </a></h4>
+                    <p class="dose">
+                        We think it is a bad idea to use a single-line text to hold the email address for your end users, because this type of field is just not for email addresses. That's why we created this product, to make your email field a real email field. There is no
+                        need to write a regular expression to validate the end users' input, and they can get some options to choose when end users typing in characters.
+                    </p>
+                    <p class="text-right">
+                        <a href="/sharepoint-email-field.html" class="btn btn_learn">Learn More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="media row">
+                <div class="media-left col-sm-12 col-xs-12  col-md-3 col-lg-3">
+                    <a href="sharepoint-email-field.html">
+                        <img src="assets/images/pro_pic02.png" class="media-object" src="..." alt="..." />
+                    </a>
+                </div>
+                <div class="media-body col-sm-12 col-xs-12 col-md-8 col-lg-8">
+                    <h4 class="media-heading"><a href="sharepoint-list-view-filter.html">SharePoint List View Filter</a></h4>
+                    <p class="dose">
+                        The SharePoint List View Filter is a handy plugin to save your time from finding the items you want from one data list. This plugin provides you very filters like the ones in Office Excel. Foe example, you can find the itmes by a numeric range, or a date
+                        range. With these Excel-like filters, you can forget about creating more views in your SharePoint list.
+
+                    </p>
+                    <p class="text-right">
+                        <a href="/sharepoint-list-view-filter.html" class="btn btn_learn">Learn More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<div class="productdsecri_box">
+    <div class="container">
+        <div class="productdsecri_main">
+            <h3>Product  description</h3>
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-xs-12">
+                    <div class="prod_left">
+                        <h5>SharePoint List View Filter</h5>
+                        <p class="text_prodes">
+                            With this SharePoint List View Filter you can easily and effectively filter items in a SharePoint List View. Because SharePoint out of the box view filter feature is very weak, it only supports users to order the items by descending or ascending, or filter
+                            by a quite general list of options, what’s more, the filter condition is only applied to the current page of the SharePoint list view, most people may become unglued when it comes to filtering some specific information from
+                            a large amount of items that are displayed in a SharePoint list view. Then the question arises: how to filter items easily and effectively? Here we introduce you SharePoint List View Filter add-on to solve this issue.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="prod_right text-center">
+                        <img src="assets/images/pic_01.png" class="img-responsive" style="margin: auto;" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="contact_box">
+    <div class="container">
+        <div class="contact_main">
+            <h3>Contact us</h3>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="prod_left">
+                        <ul>
+                            <li>
+                                <input type="text" placeholder="You Email Address" />
+                            </li>
+                            <li>
+                                <input type="text" placeholder="What do you need help with?" />
+                            </li>
+                            <li>
+                                <textarea cols="5" placeholder="Describe your problem"></textarea>
+                            </li>
+                            <li>
+                                <button class="btn btn-block btn_submit">submit</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="prod_right">
+                        <ul>
+                            <li>
+                                <h5>Get in touch</h5>
                                 <p>
-                                    <a class="btn btn_free" href="">
-                                        <img src="assets/images/icon_b01.png" />Free Trial</a>
-                                    <button class="btn btn_buy ">
-                                        <img src="assets/images/icon_b02.png" />Buy Now</button>
+                                    Licensing Inquires Licensing Inquires Licensing Inquires
+                                    <br /> Licensing Inquires Licensing Inquires
                                 </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4  xs_none">
-                            <div class="banner01_right"  style="margin-top: -60px;position:relative">
-                                <img src="assets/images/banner_01pic01.png" class="img-responsive" />
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="item">
-              <img src="assets/images/listfilter/bannerbackground.png" />
-              <div class="carousel-caption">
-
-                  <div class="row">
-                      <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
-                          <div class="banner01_left">
-                              <div class="img_tips" style="margin-left: -15px;">
-                                <img src="assets/images/listfilter/text.png" class="img-responsive" />
-                              </div>
-                              <p>
-                                  <button class="btn btn_free ">
-                                      <img src="assets/images/icon_b01.png" />Free Trial</button>
-                                  <button class="btn btn_buy ">
-                                      <img src="assets/images/icon_b02.png" />Buy Now</button>
-                              </p>
-                          </div>
-                      </div>
-                      <div class="col-lg-6 col-md-6  xs_none">
-                          <div class="banner01_right" style="margin-top: -60px;position:relative">
-                              <img src="assets/images/listfilter/logo.png" style="width:724px;max-width: inherit;" class="img-responsive" />
-                          </div>
-                      </div>
-                  </div>
-
-              </div>
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-
-
-
-      <div id="Div1" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#Div1" data-slide-to="0" class="active"></li>
-            <li data-target="#Div1" data-slide-to="1"></li>
-            <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img src="assets/images/slide2-bg.jpg" />
-            </div>
-            <div class="item">
-                <img src="assets/images/slide4-bg.jpg" />
-            </div>
-        </div>
-
-        <!-- Controls -->
-        <a class="left carousel-control" href="#Div1" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#Div1" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-
-
-
-
-
-        <div class="product_box">
-            <div class="container">
-                <div class="product_main">
-                    <h3>PRODUCTS</h3>
-                    <div class="media row">
-                        <div class="media-left col-sm-12 col-xs-12  col-md-3 col-lg-3 ">
-                            <a href="sharepoint-email-field.html">
-                                <img src="assets/images/pro_pic01.png" class="media-object" src="..." alt="..." />
-                            </a>
-                        </div>
-                        <div class="media-body  col-sm-12 col-xs-12 col-md-8 col-lg-8 ">
-                            <h4 class="media-heading"> <a href="sharepoint-email-field.html"> SharePoint Email Column </a></h4>
-                            <p class="dose">
-                               We think it is a bad idea to use a single-line text to hold the email address for your end users, because this type of field is just not for email addresses.
-                                That's why we created this product, to make your email field a real email field. There is no need to write a regular expression to validate the end users' input,
-                                and they can get some options to choose when end users typing in characters.
-                            </p>
-                            <p class="text-right">
-                                <button class="btn btn_learn">Learn  More</button>
-                                <button class="btn btn_download">Download</button>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="media row">
-                        <div class="media-left col-sm-12 col-xs-12  col-md-3 col-lg-3">
-                            <a href="sharepoint-email-field.html">
-                                <img src="assets/images/pro_pic02.png" class="media-object" src="..." alt="..." />
-                            </a>
-                        </div>
-                        <div class="media-body col-sm-12 col-xs-12 col-md-8 col-lg-8">
-                            <h4 class="media-heading"><a href="sharepoint-list-view-filter.html">SharePoint List View Filter</a></h4>
-                            <p class="dose">
-                                The SharePoint List View Filter is a handy plugin to save your time from finding the items you want from one data list.
-                                 This plugin provides you very filters like the ones in Office Excel. Foe example, you can find the itmes by a numeric range, or a date range.
-                                 With these Excel-like filters, you can forget about creating more views in your SharePoint list.
-
-                            </p>
-                            <p class="text-right">
-                                <button class="btn btn_learn">Learn  More</button>
-                                <button class="btn btn_download">Download</button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="productdsecri_box">
-            <div class="container">
-                <div class="productdsecri_main">
-                    <h3>Product  description</h3>
-                    <div class="row">
-                        <div class="col-lg-8 col-md-8 col-xs-12">
-                            <div class="prod_left">
-                                <h5>SharePoint View Filter</h5>
-                                <p class="text_prodes">
-                                    With this SharePoint List View Filter you can easily and effectively filter items in a SharePoint List View.
-                                        Because SharePoint out of the box view filter feature
-                                    is very weak, it only supports users to order the items by descending
-                                        or ascending, or filter by a quite general list of options, what’s more, the filter condition is only applied to the current page
-                                        of the SharePoint list view, most people may become unglued when it comes to filtering some specific information from a large
-                                        amount of items that are displayed in a SharePoint list view. Then the question arises: how to filter items easily and effectively?
-                                        Here we introduce you SharePoint List View Filter add-on to solve this issue.
+                            </li>
+                            <li>
+                                <h5>You are welcome to contact us anytime</h5>
+                                <p>
+                                    Licensing Inquires: <span>sales@BluePower.com </span>
+                                    <br /> Technical Support: <span>support@BluePower.com  </span>
                                 </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-xs-12">
-                            <div class="prod_right text-center">
-                                <img src="assets/images/pic_01.png" class="img-responsive" style="margin: auto;" />
-                            </div>
-                        </div>
+                            </li>
+                            <li>
+                                <h5>Business  Hours</h5>
+                                <p>
+                                    Licensing Inquires Licensing Inquires Licensing Inquires
+                                    <br /> Licensing Inquires
+                                </p>
+                            </li>
+                        </ul>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
+    </div>
+</div>
 
+  <script id="dsq-count-scr" src="//bluepowersolutions.disqus.com/count.js" async></script>
+  <div id="disqus_thread"></div>
+  <script>
+  /**
+  * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+  */
+  var PAGE_URL = "http://www.bluepowersolutions.com";
+  var PAGE_IDENTIFIER = "bluepowersolutions.com";
+  var disqus_config = function () {
+  this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
 
-        <div class="contact_box">
-            <div class="container">
-                <div class="contact_main">
-                    <h3>Contact us</h3>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-xs-12">
-                            <div class="prod_left">
-                                <ul>
-                                    <li>
-                                        <input type="text" placeholder="You Email Address" /></li>
-                                    <li>
-                                        <input type="text" placeholder="What do you need help with?" /></li>
-                                    <li>
-                                        <textarea cols="5" placeholder="Describe your problem"></textarea></li>
-                                    <li>
-                                        <button class="btn btn-block btn_submit">submit</button></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-xs-12">
-                            <div class="prod_right">
-                                <ul>
-                                    <li>
-                                        <h5>Get in touch</h5>
-                                        <p>
-                                            Licensing Inquires  Licensing Inquires   Licensing Inquires
-                                            <br />
-                                            Licensing Inquires  Licensing Inquires
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h5>You are welcome to contact us anytime</h5>
-                                        <p>
-                                            Licensing Inquires: <span>sales@BluePower.com </span>
-                                            <br />
-                                            Technical Support: <span>support@BluePower.com  </span>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h5>Business  Hours</h5>
-                                        <p>
-                                            Licensing Inquires  Licensing Inquires   Licensing Inquires
-                                            <br />
-                                            Licensing Inquires
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
 
-                </div>
+  s.src = '//bluepowersolutions.disqus.com/embed.js';
 
-            </div>
-
-        </div>
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
