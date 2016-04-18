@@ -62,7 +62,7 @@ box-shadow: 0px 0px 100px #888888;
     margin-right: -15px;
     margin-top: 15px;
     margin-top:0;
-    padding:12.5px 0;
+    bottom:3px;
 }
 /*.navbar-toggle { margin-top:15px;}*/
     .navbar-default .navbar-toggle {
@@ -74,8 +74,11 @@ box-shadow: 0px 0px 100px #888888;
     float: right !important;
     margin-right: -15px;
     /*margin-top: 55px;*/
-    padding: 34px 0;
-            transition: all 0.5s linear 0.3s ;
+
+    position: absolute;
+right: 0px;
+bottom: 20px;
+    transition: all 0.5s linear 0.3s ;
     -moz-transition: all 0.5s linear 0.3s ;
     -webkit-transition: all 0.5s linear 0.3s ;
     -o-transition: all 0.5s linear 0.3s ;
@@ -275,7 +278,8 @@ padding:5px 25px;
 .tipsD .tips_main dt, .tipsD .tips_main h4{ font-size:14px; color:#666; font-weight:600;}
 
 .btn_buynow{ background:#0087cb; color:#fff; font-size:16px; }
-.tableD td.red_text { font-size:16px; color:#ff0202;}
+.tableD td.red_text { font-size:16px; color:#ff0202;font-weight: bold;}
+.tableD td.blue_text {font-size: 16px; color: #337ab7; font-weight: bold;}
 .tableD td { font-size:16px; color:#333;  }
 .tableD .active td { font-size:16px; color:#333; font-weight:600;}
 
