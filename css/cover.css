@@ -203,13 +203,13 @@ ul, li, dl, dt, dd {
     padding: 0;
     color: #474747;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 22px;
     margin-bottom: 25px;
 }
 .banner01_left h5 {
     padding: 0;
     color: #474747;
-    font-size: 30px;
+    font-size: 22px;
     margin-bottom: 25px;
 }
 .banner01_left .btn {
@@ -231,9 +231,9 @@ ul, li, dl, dt, dd {
     margin-bottom: 0;
 }
 .product_main h3 {
-    font-size: 36px;
+    font-size: 22px;
     color: #333;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
     padding: 30px 0 30px 0;
     margin: 0;
@@ -267,6 +267,10 @@ ul, li, dl, dt, dd {
     color: #fff;
     background: #cccccc;
 }
+.product_main .media .img-icon{
+    width: 100px;
+    height: 100px;
+}
 .productdsecri_box {
     background: #e4e4e4;
     padding: 35px 0;
@@ -279,9 +283,9 @@ ul, li, dl, dt, dd {
     margin-bottom: 20px;
 }
 .productdsecri_box h3 {
-    font-size: 36px;
+    font-size: 22px;
     color: #333;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
     padding: 15px 0 50px 0;
     margin: 0;
@@ -293,9 +297,9 @@ ul, li, dl, dt, dd {
     text-align: justify;
 }
 .contact_main h3 {
-    font-size: 36px;
+    font-size: 22px;
     color: #333;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
     padding: 60px 0 40px 0;
     margin: 0;
@@ -444,9 +448,9 @@ ul, li, dl, dt, dd {
     display: inline-block;
 }
 .sharepoint_main h3 {
-    font-size: 36px;
+    font-size: 22px;
     color: #333;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -460,9 +464,9 @@ ul, li, dl, dt, dd {
     margin-top: 30px;
 }
 .textD_main h3 {
-    font-size: 30px;
+    font-size: 22px;
     color: #333;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
     margin: 0;
     margin-bottom: 50px;
@@ -531,7 +535,7 @@ ol>li {
     width: 105px;
     height: 35px;
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     border: 0;
     cursor: pointer;
