@@ -12,6 +12,12 @@ ul, li, dl, dt, dd {
     -webkit-transition: all 1s;
     -o-transition: all 1s;
 }
+h2{
+    color: #474747;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
 
 /*head*/
 
@@ -193,32 +199,35 @@ ul, li, dl, dt, dd {
     text-align: left;
     text-shadow: none;
 }
-.banner01_left {
+.carousel-caption .lead{
+    font-weight: 600;
+    color: #666;
+}
+.banner-left {
     padding-top: 0px;
 }
-.banner02_right {
-    padding-top: 40px;
+.banner-right {
 }
-.banner01_left h3 {
+.banner-left h3 {
     padding: 0;
     color: #474747;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 22px;
     margin-bottom: 25px;
 }
-.banner01_left h5 {
+.banner-left h5 {
     padding: 0;
     color: #474747;
     font-size: 22px;
     margin-bottom: 25px;
 }
-.banner01_left .btn {
+.banner-left .btn {
     background: #55dbba;
     font-size: 16px;
     color: #fff;
 }
-.banner01_left .btn_free {
-    margin-right: 10px;
+.banner-left .btn-right{
+    margin-left: 10px;
 }
 .img_tips {
     margin-bottom: 25px;
@@ -242,13 +251,29 @@ ul, li, dl, dt, dd {
     padding-right: 0px;
     text-align: center;
 }
-.product_main .media .media-object {
-    margin: auto;
-}
 .product_main .media .media-heading {
     font-size: 18px;
     color: #0087cb;
     margin-bottom: 20px;
+}
+@media (min-width:992px){
+    .product_main .media .media-object {
+	margin-left: 0px;
+	margin-top: auto;
+	margin-bottom: auto;
+    }
+}
+@media (max-width:992px){
+    .product_main .media .media-object {
+	margin: auto;
+    }
+    .product_main .media .media-heading {
+	font-size: 18px;
+	color: #0087cb;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+    }
 }
 .product_main .media .dose {
     font-size: 14px;
@@ -381,7 +406,7 @@ ul, li, dl, dt, dd {
 /*����Ӧ��ʽ*/
 
 @media (max-width:768px) {
-    .banner01_left .btn img {
+    .banner-left .btn img {
         display: none;
     }
     #bs-example-navbar-collapse-1 {
@@ -394,19 +419,19 @@ ul, li, dl, dt, dd {
     .xs_none {
         display: none;
     }
-    .banner01_left h3 {
+    .banner-left h3 {
         font-size: 22px;
     }
-    .banner01_left h5 {
+    .banner-left h5 {
         font-size: 20px;
     }
     .img_tips {
         margin-bottom: 5px;
     }
-    .banner01_left .btn_free {
+    .banner-left .btn_free {
         margin-right: 0px;
     }
-    .banner01_left .btn {
+    .banner-left .btn {
         padding: 1px 5px;
     }
     .product_main .media .media-left {
@@ -490,11 +515,6 @@ ul, li, dl, dt, dd {
     font-size: 14px;
     color: #666;
     font-weight: 600;
-}
-.btn_buynow {
-    background: #0087cb;
-    color: #fff;
-    font-size: 16px;
 }
 .tableD td.red_text {
     font-size: 16px;
