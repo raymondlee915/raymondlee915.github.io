@@ -479,12 +479,27 @@ h2{
     padding-top: 40px;
     padding-bottom: 30px;
 }
-.sharepoint_main .pic {
-    text-align: center;
-    margin-bottom: 25px;
+.sharepoint_main .icon-left{
+    float: left;
+    width: 1.25rem;
 }
-.sharepoint_main .pic img {
-    display: inline-block;
+.sharepoint_main .icon-left img{
+    margin-top: 0.08rem;
+    max-width: 100%;
+}
+.sharepoint_main .icon-right{
+    margin-left: 1.6rem;
+}
+.sharepoint_main .email-icon-left{
+    float: left;
+    width: 0.86rem;
+}
+.sharepoint_main .email-icon-left img{
+    margin-top: 0.05rem;
+    max-width: 100%;
+}
+.sharepoint_main .email-icon-right{
+    margin-left: 1.20rem;
 }
 .sharepoint_main h3 {
     font-size: 18px;
@@ -492,12 +507,6 @@ h2{
     font-weight: 600;
     margin: 0;
     margin-bottom: 10px;
-}
-.sharepoint_main .left_info {
-    font-size: 14px;
-    color: #666;
-    text-align: justify;
-    line-height: 20px;
 }
 .textD_box {
     padding-top: 40px;
