@@ -30,7 +30,7 @@ h2{
     z-index: 99999999;
     background: #fff;
 }
-.index_page .carousel, .details_page .nav_mbx {
+.carousel, .details_page .nav_mbx {
     margin-top: 105px;
 }
 .navbar-default {
@@ -132,20 +132,8 @@ h2{
 .banner-left {
     padding-top: 0px;
 }
-.banner-right {
-}
-.banner-left h3 {
-    padding: 0;
-    color: #474747;
-    font-weight: 600;
-    font-size: 22px;
-    margin-bottom: 25px;
-}
-.banner-left h5 {
-    padding: 0;
-    color: #474747;
-    font-size: 22px;
-    margin-bottom: 25px;
+.banner-right img {
+    height: 3rem;
 }
 .banner-left .btn {
     background: #55dbba;
@@ -336,7 +324,7 @@ h2{
     box-shadow: 0px 0px 8px #f0f0f0;
 }
 .nav_mbx {
-    background: #000;
+    background: #245559;
     padding: 10px 0;
     color: #007bb9;
     font-size: 12px;
@@ -498,6 +486,15 @@ ol>li {
 	margin-top: auto;
 	margin-bottom: auto;
     }
+    .banner-left h2{
+	font-size: 0.3rem;
+    }
+    .banner-left .lead{
+	font-size: 0.22rem;
+    }
+    .banner-left .btn{
+	font-size: 0.16rem;
+    }
 }
 @media (max-width:992px){
     .product_main .media .media-object {
@@ -515,6 +512,14 @@ ol>li {
     }
     .sharepoint_main .email-icon-right h3, .sharepoint_main .icon-right h3{
 	text-align: center;
+    }
+}
+@media (max-width: 1200px){
+    .banner-left h2{
+	font-size: 0.3rem;
+    }
+    .banner-left .lead{
+	font-size: 0.22rem;
     }
 }
 
@@ -579,12 +584,6 @@ ol>li {
     }
     .xs_none {
         display: none;
-    }
-    .banner-left h3 {
-        font-size: 22px;
-    }
-    .banner-left h5 {
-        font-size: 20px;
     }
     .img_tips {
         margin-bottom: 5px;
