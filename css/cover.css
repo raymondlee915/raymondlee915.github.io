@@ -130,10 +130,16 @@ h2{
     color: #666;
 }
 .banner-left {
-    padding-top: 0px;
+    position: relative;
+    padding-top: 48.175%;
+}
+.banner-left .banner-captain{
+    position: absolute;
+    bottom: 0.3rem;
+    left: 0px;
 }
 .banner-right img {
-    height: 3rem;
+    max-height: 3rem;
 }
 .banner-left .btn {
     background: #55dbba;
@@ -354,14 +360,15 @@ h2{
 }
 .sharepoint_main .email-icon-left{
     float: left;
-    width: 0.86rem;
+    padding-right: 12px;
+    width: 82px;
 }
 .sharepoint_main .email-icon-left img{
-    margin-top: 0.05rem;
     max-width: 100%;
 }
 .sharepoint_main .email-icon-right{
-    margin-left: 1.20rem;
+    /*margin-left: 1.20rem;*/
+    clear: right;
 }
 .sharepoint_main h3 {
     font-size: 18px;
@@ -518,6 +525,9 @@ ol>li {
     .banner-left h2{
 	font-size: 0.3rem;
     }
+    .banner-left .btn{
+	font-size: 0.16rem;
+    }
     .banner-left .lead{
 	font-size: 0.22rem;
     }
@@ -581,9 +591,6 @@ ol>li {
         right: 15px;
         background: rgb(255, 255, 255) none repeat scroll 0% 0%;
         padding: 5px 25px;
-    }
-    .xs_none {
-        display: none;
     }
     .img_tips {
         margin-bottom: 5px;
