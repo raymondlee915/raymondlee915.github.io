@@ -1,49 +1,45 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
     <div class="page {{page.pageType}}" id="wrap">
 
-    {% include header.html %}
+        {% include header.html %} {{ content }} {% include footer.html %}
 
-    {{ content }}
+    </div>
 
-    {% include footer.html %}
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function resetTopBar() {
+            if ($(window).scrollTop() > 100) {
+                if ($('.header').is(".large")) {
+                    $('.header').removeClass('large').addClass('small');
+                }
+            } else if ($('.header').is(".small")) {
+                $('.header').removeClass('small').addClass('large');
+            }
+        }
+        $(function() {
+            $(window).on('scroll', resetTopBar);
+            $(window).resize(_resetFont);
+        });
+    </script>
 
-  </div>
+    <script type="text/javascript">
+        $(function() {
+            resetTopBar();
+            $("#onePageBody").css("minHeight", $(document).height() - 357);
+            var pageMenu = '{{page.menuItem}}';
+            if (pageMenu) {
+                $(".navbar li[menuItem='" + pageMenu + "']").addClass("active");
+            }
+        });
+    </script>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-    function resetTopBar() {
-      if ($(window).scrollTop() > 100 ) {
-	if($('.header').is(".large")){
-	  $('.header').removeClass('large').addClass('small');
-	}
-      } else if( $('.header').is(".small")){
-	  $('.header').removeClass('small').addClass('large');
-      }
-    }
-      $(function () {
-          $(window).on('scroll', resetTopBar);
-	  $(window).resize(_resetFont);
-      });
-  </script>
-
-<script type="text/javascript">
-   $(function(){
-     resetTopBar();
-     $("#onePageBody").css("minHeight", $(document).height()-357);
-     var pageMenu = '{{page.menuItem}}';
-     if(pageMenu){
-        $(".navbar li[menuItem='"+pageMenu+"']").addClass("active");
-     }
-   });
-</script>
-
-  </body>
+</body>
 
 </html>
