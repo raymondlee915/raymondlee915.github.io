@@ -3,7 +3,7 @@ layout: "post"
 title: "How to validate Email Address Columns in SharePoint"
 date: "2016-11-29 23:23"
 pageType: details_page
-excerpt: This post can help you to setup one workflow with email approval
+excerpt: In this post, you can know how to set up a formula to validate the user's input in an email column. And also, you can learn how BluePower's SharePoint Email Column can solve this issue even better.
 ---
 There are a lot of cases in which you need to setup one field to hold the email addresses. So it is a very common request for a SharePoint administrator to do email address validation on this field.
 
