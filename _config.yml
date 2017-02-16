@@ -18,3 +18,10 @@ keywords: SharePoint Add-ins, SharePoint WebPart, List Filter
 
 # Build settings
 markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+exclude:
+  - Gemfile
+  - Gemfile.lock
