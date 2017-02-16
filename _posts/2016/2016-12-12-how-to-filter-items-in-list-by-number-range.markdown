@@ -54,7 +54,7 @@ You can get more methods to filter the items,
 3. This Month. Search the column value belongs to the current month.
 4. Last Week. Search the column value belongs to the last week.
 5. Last Month. Search the column value belongs to the last month.
-6. From * to *. Search the column value in the range of your inputs.
+6. From * to *. Search the column value in the range of your inputs, basically you can use this to filter dates based on a date range.
 
 ![Advanced filter menu for Date and Time](/assets/images/listfilter/date-filter-menu.PNG)
 
