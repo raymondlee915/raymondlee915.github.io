@@ -39,8 +39,9 @@ And here comes the codes,
 
       JSRequest.EnsureSetup();
       hostweburl = decodeURIComponent(JSRequest.QueryString["SPHostUrl"]);
-      appweburl = decodeURIComponent(JSRequest.QueryString["SPAppWebUrl"]);
 
+      // appweburl = decodeURIComponent(JSRequest.QueryString["SPAppWebUrl"]);
+      appweburl = _spPageContextInfo.siteAbsoluteUrl;
       var context = new SP.ClientContext(appweburl);
       var appContextSite = new SP.AppContextSite(context, hostweburl);
       var web = appContextSite.get_web();
@@ -67,7 +68,9 @@ And here comes the codes,
 
 {% endhighlight %}
 
-I am using jQuery to help me. The most tricky thing in this code is you have to pass the subscription object to method **countInstancesWithStatus**, you can not just pass the ID. That is why we need to load the subscription object first with the ID we found on the page.
+I am using jQuery to help me. Please pay attention, that you have to pass the subscription object to method **countInstancesWithStatus**, you can not just pass the ID. That is why we need to load the subscription object first with the ID we found on the page.
+
+But the most tricky thing in this code is you don't use **JSRequest.QueryString["SPAppWebUrl"]** as appweburl if this code is running in a SharePoint add-in. It just does not work. I struggled on this issue for a few of days, Microsoft doesn't have any document about this. You have to use the site URL of your add-in web, not the web URL. Otherwise, it always give you 0 as a result. I have to say, this is almost drove me crazy.
 
 In this code, it is querying the suspended instances. You can query instances in any status by changing the second parameter for method **countInstancesWithStatus**. Here is the options you can have,
 {% highlight javaScript %}
