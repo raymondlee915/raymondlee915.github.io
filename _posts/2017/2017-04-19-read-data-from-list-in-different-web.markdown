@@ -28,7 +28,7 @@ Now I am going to explain all the actions in this workflow one by one.
 6. Action "Get an Item from a Dictionary". The first parameter is string represents the path of the value you need, it is "d/results" in this case. The second parameter is used to store the result. If you need to get an item form an Array, use "(*index*)" to get it like I did in the step "Get One Item".
 7. Action "Count Items in a Dictionary". With this one can get how many items are included in this response.
 
-### Cross Website Issue
+### **Cross Website Issue**
 If the target website is the same one where this workflow is running, this workflow would work just fine. But the HTTP call won't be succeed if you are querying data from a different website. If you log the responseCode out, you would find the its value is "Unauthorized". By default, SharePoint does not allow cross-website query. The following are the step how to fix this problem.
 
 **First you need to enable the "Workflows can use app permissions" feature at the site you are running the HTTP web service call workflow on.**
