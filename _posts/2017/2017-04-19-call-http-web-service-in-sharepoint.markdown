@@ -51,8 +51,7 @@ To grant full control permission to a workflow:
 
 2) Under the **Users and Permissions** section, select **Site app permissions**.
 
-3) On this page the app permissions will be displayed for all apps on your site. Copy the client section of the App Identifier for Workflow. This is the identifier between the last "|" and the "@"
-
+3) On this page the app permissions will be displayed for all apps on your site. Copy the client section of the **App Identifier for Workflow**. This is the identifier between the last "|" and the "@"
 ![Get App ID](/images/2017/04/callHttpAppId.PNG)
 
 4) Then navigate to the **Grant permission to an app** page for the site you are trying to run the web service call against. This must be manually navigated to by typing the following URL:
