@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "Read items from list in SharePoint website by using SharePoint REST API"
+title: "Call HTTP Web Service in SharePoint workflow"
 date: "2017-04-19 20:59"
 author: "Ray Lee"
 pageType: details_page
