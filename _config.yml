@@ -7,14 +7,14 @@
 
 # Site settings
 title: BluePower Solutions
-email: support@bluepowersolutions.com
+email: support@offiaid.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.bluepowersolutions.com" # the base hostname & protocol for your site
-keywords: SharePoint Add-ins, SharePoint WebPart, List Filter
+url: "https://bluepower.solutions" # the base hostname & protocol for your site
+keywords: SharePoint Solutions, Excel Tool, Excel Import
 
 # Build settings
 markdown: kramdown

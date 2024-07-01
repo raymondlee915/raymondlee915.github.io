@@ -1,1 +1,1 @@
-Sitemap: http://bluepowersolutions.com/sitemap.xml
+Sitemap: http://bluepower.solutions/sitemap.xml
