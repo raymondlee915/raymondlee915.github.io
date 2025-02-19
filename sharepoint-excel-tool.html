@@ -232,9 +232,29 @@ pageType: details_page
     <div class="textD_main">
       <h3 class="trimtop">Purchase </h3>
       <p>
-        Please contact with <a href="mailto:support@offiaid.com">support@offiaid.com</a> to pay. 
+        Click the following button to pay. After you have paid, please send your payment info with SharePoint Site URL to <a href="mailto:support@offiaid.com">support@offiaid.com</a>.
       </p>
-     
-    </div>
+      <div id="paypal-button-container-P-8FY09950KA491642EM63ECOI"></div>
+      <script src="https://www.paypal.com/sdk/js?client-id=AeRwVJZY0Es3MiuCl8AK09cGDIDM3sc8HWmpaor6F0hJKEa1m7PVvNkH2WsP9QhHF1QoQGDuWALKWHrI&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+      <script>
+        paypal.Buttons({
+          style: {
+            shape: 'rect',
+            color: 'gold',
+            layout: 'vertical',
+            label: 'subscribe'
+          },
+          createSubscription: function (data, actions) {
+            return actions.subscription.create({
+              /* Creates the subscription */
+              plan_id: 'P-8FY09950KA491642EM63ECOI'
+            });
+          },
+          onApprove: function (data, actions) {
+            alert(data.subscriptionID); // You can add optional success message for the subscriber here
+          }
+        }).render('#paypal-button-container-P-8FY09950KA491642EM63ECOI'); // Renders the PayPal button
+      </script>
   </div>
+</div>
 </div>
